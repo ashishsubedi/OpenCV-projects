@@ -28,10 +28,9 @@ if cap.isOpened():
 
         cv2.imshow("Original", frame1)
         cv2.imshow("Opening", dilated)
-
-
         if cv2.waitKey(1) == 27:
             break
+
 
         frame1 = frame2
         ret, frame2 = cap.read()
