@@ -22,9 +22,8 @@ params.minInertiaRatio = 0.1
 
 
 
-
-
 detector = cv2.SimpleBlobDetector_create(params)
+
 
 keypoints = detector.detect(img)
 image = img.copy()
