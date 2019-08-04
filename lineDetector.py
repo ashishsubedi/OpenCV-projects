@@ -5,7 +5,9 @@ img = cv2.imread("C:/Users/Dell/Desktop/ImageProcessing/sudoku.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 edges = cv2.Canny(gray, 120, 150)
+cv2.imshow('Image', img)
 
+cv2.waitKey(0)
 lines = cv2.HoughLines(edges, 1, np.pi/180, 250)
 for index,line in enumerate(lines):
     for r, theta in line:

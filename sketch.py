@@ -16,7 +16,7 @@ def sketch(image):
 
     img_blur = cv2.GaussianBlur(img, (5, 5), 0)
 
-    edges = cv2.Canny(img_blur,10,80)
+    edges = cv2.Canny(img_blur,20,80)
     mask1 = cv2.bitwise_not(edges)
     _,mask2 = cv2.threshold(edges, 100, 255, cv2.THRESH_BINARY_INV)
     

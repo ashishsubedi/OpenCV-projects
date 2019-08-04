@@ -3,6 +3,8 @@ import numpy as np
 
 
 image = cv2.imread("C:/Users/Dell/Desktop/ImageProcessing/house.tif")
+cv2.imshow("image",image)
+cv2.waitKey(0)
 
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
